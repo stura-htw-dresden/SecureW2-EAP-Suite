@@ -1,0 +1,126 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft eMbedded Visual C++ generated include file.
+// Used by Main_CE.rc
+//
+#define IDS_INVALID_LICENSE             1
+#define IDS_SW2_ERROR                   2
+#define IDVIEWCERT                      3
+#define IDC_CONFIG_USER_ADVANCED        3
+#define IDS_CERTIFICATES_SUCCESS        3
+#define IDINSTALLCERT                   4
+#define IDS_CERTIFICATES_FAILED         4
+#define IDINSTALLCERTS                  5
+#define IDS_PROFILE_EXISTS              5
+#define IDS_SW2_ALERT                   6
+#define IDS_PROFILE_DELETE              7
+#define IDS_PROFILE_DELETEDEFAULT       8
+#define IDS_SW2_CERTIFICATE             9
+#define IDS_CERTIFICATE_SUCCESS         10
+#define IDS_CERTIFICATE_FAILED          11
+#define IDS_TAB_CONNECTION              12
+#define IDS_TAB_CERTIFICATES            13
+#define IDS_TAB_AUTHENTICATION          14
+#define IDS_TAB_USERACCOUNT             15
+#define IDS_TAB_PROFILE                 16
+#define IDD_CONFIG_DLG                  101
+#define IDB_LOGO                        102
+#define IDD_CONFIG_CERT_DLG             103
+#define IDI_CERT_ICON                   104
+#define IDD_CRED_DLG                    104
+#define IDI_CERT_ICON_ERROR             105
+#define IDD_CONFIG_USER_DLG             105
+#define IDD_SERVER_TRUST_DLG            106
+#define IDD_CONFIG_COMP_DLG             107
+#define IDD_CONFIG_AUTH_DLG             108
+#define IDD_CONFIG_LICENSE_DLG          109
+#define IDD_PROFILE_DLG                 110
+#define IDD_CONFIG_PROFILE_DLG          111
+#define IDD_PROFILE_NEW_DLG             112
+#define IDD_CONFIG_ADVANCED_DLG         113
+#define IDD_CONFIG_CON_DLG1             114
+#define IDD_CONFIG_CON_DLG              114
+#define IDD_CONFIG_CA_DLG               128
+#define IDC_TAB1                        1000
+#define IDC_CONFIG_TAB                  1000
+#define IDC_LOGO                        1001
+#define IDC_CONFIG_TYPE_WIRED           1002
+#define IDC_CONFIG_TYPE_WIRELESS        1003
+#define IDC_CONFIG_VERIFY_SERVER        1005
+#define IDC_CONFIG_USE_ANONYMOUS_USERNAME 1006
+#define IDC_CONFIG_VERIFY_MS_EXTENSION  1006
+#define IDC_CONFIG_RENEW_IP             1007
+#define IDC_CONFIG_VERIFY_SERVER_NAME   1007
+#define IDC_CONFIG_ENABLE_SESSION_RESUMPTION 1008
+#define IDC_CONFIG_INNER_AUTH           1009
+#define IDC_CONFIG_PROMPT_USER          1010
+#define IDC_CONFIG_INNER_EAP            1010
+#define IDC_CONFIG_USERNAME             1011
+#define IDC_CONFIG_USER_USERNAME        1011
+#define IDC_CONFIG_DOMAIN               1012
+#define IDC_CERT_TREE                   1012
+#define IDC_CONFIG_USER_DOMAIN          1012
+#define IDC_CONFIG_PASSWORD             1013
+#define IDC_TEMP_CHECK                  1013
+#define IDC_CONFIG_USER_PASSWORD        1013
+#define IDC_CRED_USERNAME               1014
+#define IDC_CRED_PASSWORD               1015
+#define IDC_CRED_DOMAIN                 1016
+#define IDC_CONFIG_USERNAME_LABEL       1017
+#define IDC_CONFIG_USER_USERNAME_LABEL  1017
+#define IDC_CONFIG_PASSWORD_LABEL       1018
+#define IDC_CONFIG_USER_PASSWORD_LABEL  1018
+#define IDC_CONFIG_DOMAIN_LABEL         1019
+#define IDC_CONFIG_USER_DOMAIN_LABEL    1019
+#define IDC_CRED_DOMAIN_LABEL           1020
+#define IDC_CONFIG_USE_COMPUTER_CRED    1021
+#define IDC_CONFIG_COMP_USERNAME_LABEL  1022
+#define IDC_CONFIG_COMP_PASSWORD_LABEL  1023
+#define IDC_CONFIG_COMP_DOMAIN_LABEL    1024
+#define IDC_CONFIG_COMP_USERNAME        1025
+#define IDC_CONFIG_COMP_PASSWORD        1026
+#define IDC_CONFIG_COMP_DOMAIN          1027
+#define IDC_CONFIG_USE_COMPUTER_CRED_FOR_USER 1028
+#define IDC_CONFIG_INNER_EAP_CONFIG     1028
+#define IDC_CONFIG_INNER_AUTH_LABEL     1029
+#define IDC_CONFIG_PROFILE_NEW          1029
+#define IDC_CONFIG_INNER_EAP_LABEL      1030
+#define IDC_CONFIG_PROFILE_NEW2         1030
+#define IDC_CONFIG_REG_ID_LABEL         1031
+#define IDC_CONFIG_REG_ID               1032
+#define IDC_IMPORT_LICENSE              1033
+#define IDOK2                           1034
+#define IDC_CONFIG_PROFILES_LABEL       1035
+#define IDC_CONFIG_PROFILE_CONFIGURE    1036
+#define IDC_CONFIG_PROFILE_DELETE       1037
+#define IDC_CONFIG_PROFILES             1038
+#define IDC_PROFILE_ID                  1039
+#define IDC_PROFILE_LABEL               1040
+#define IDC_PROFILE_TAB                 1041
+#define IDC_CONFIG_SERVER_NAME          1042
+#define IDC_CONFIG_TRUSTEDROOTCA        1044
+#define IDC_CONFIG_TRUSTEDROOTCA_LBL    1045
+#define IDC_CONFIG_SERVER_CERT_LOCAL    1046
+#define IDC_CONFIG_ALLOW_NEW_CONNECTION 1047
+#define IDC_CONFIG_USE_ALTERNATE_ANONYMOUS 1048
+#define IDC_CONFIG_USE_ALTERNATE_SPECIFY 1049
+#define IDC_CONFIG_USE_ALTERNATE_OUTER  1050
+#define IDC_CONFIG_ALTERNATE_OUTER      1052
+#define IDC_CRED_SAVECREDENTIALS        1053
+#define IDC_CONFIG_USE_WINDOWS_TRUST    1054
+#define IDC_CONFIG_SPECIFY_ROOTCA       1055
+#define IDC_CONFIG_ADDCERT_ADD          1057
+#define IDC_CONFIG_CERT_ADD             1059
+#define IDC_CONFIG_CERT_REMOVE          1060
+#define IDC_CONFIG_ROOTCA               1061
+#define IDS_CAP_MENUITEM40001           40002
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        128
+#define _APS_NEXT_COMMAND_VALUE         40003
+#define _APS_NEXT_CONTROL_VALUE         1056
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

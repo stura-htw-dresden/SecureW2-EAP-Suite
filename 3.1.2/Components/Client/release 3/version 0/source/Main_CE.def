@@ -1,0 +1,7 @@
+LIBRARY	AA_SW2_CE
+EXPORTS
+    RasEapGetInfo
+    RasEapInvokeInteractiveUI
+    RasEapInvokeConfigUI
+    RasEapFreeMemory
+	RasEapGetIdentity

@@ -1,0 +1,158 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSTALL_DLG DIALOGEX 0, 0, 255, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | 
+    DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SecureW2 - PreConfigure"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,255,60
+    LTEXT           "Username:",IDC_INSTALL_USERNAME_LABEL,44,99,36,8
+    LTEXT           "Re-enter Password:",IDC_INSTALL_PASSWORD_LABEL2,14,131,
+                    65,8
+    LTEXT           "Password:",IDC_INSTALL_PASSWORD_LABEL,45,115,34,8
+    LTEXT           "Domain:",IDC_INSTALL_DOMAIN_LABEL,52,146,27,8
+    LTEXT           "Profile:",IDC_INSTALL_PROFILE_LABEL,55,82,24,8
+    EDITTEXT        IDC_INSTALL_PROFILE,86,80,133,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_INSTALL_USERNAME,86,96,133,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INSTALL_PASSWORD,86,112,133,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_INSTALL_PASSWORD2,86,128,133,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_INSTALL_DOMAIN,86,144,133,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,145,171,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,171,50,14
+    LTEXT           "Please enter your credentials",IDC_PROFILE_DESCRIPTION,
+                    11,66,233,8,SS_NOPREFIX | SS_ENDELLIPSIS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INSTALL_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO_1              BITMAP                  "logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Alfa & Ariss B.V."
+            VALUE "FileDescription", "MyZones SecureX client v1.0.0"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "MyZones SecureX client v1.0.0"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "mz_securex.dll"
+            VALUE "ProductName", "MyZones SecureX client v1.0.0"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

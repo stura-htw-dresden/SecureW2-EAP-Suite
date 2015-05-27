@@ -1,0 +1,45 @@
+SecureW2 3.0.0 Release notes
+
+Version 3.0.0 - 1 Februari 2004
+
+- SecureW2 has a better certificate configuration, can now configure multiple CAs
+
+- Users can specify outer identity
+
+- Improved the way computer credentials can be configured
+
+- "Prepared" code for Open Source
+
+- Added exra description string to installer that is displayed when prompting for user credentials
+
+Version 2.2.0 - 4th August 2004
+
+- SecureW2 can now handle self-signed certificates
+
+- Added multiple language support. Currently the languages Dutch and English are available.
+
+- Multiple user configurations improved. Non-admin users can now access the SecureW2 configuration 
+  but are restricted to the "User" tab.
+
+- SecureW2 now supports pre-configuration scripts allowing Administrators to issue their users with
+  a pre-configured SecureW2 copy that will install the necessary certificates and configuration.
+
+Version 2.1.0 - 29th June 2004
+
+- Added "Save credentials" option to "SecureW2 Credentials" window
+
+- Added "Certificates" tab to configuration allowing better control of certificates:
+	- Validation of certificate based on Common Name
+	- Root CA can now be specified
+	- Enhanced Key Usage check is now optional
+	- Previously the server certificate had to be installed on the local machine, 
+	  this is now optional
+	- Users cannot install new certificates ("connections") by default.
+	  This allows administrators to distribute a copy of SecureW2 that will only 
+          	  work in their network (by default)
+
+- Removed "temporary trust" option in the "SecureW2 Untrusted Server" window
+
+- Outer identity can now be specified.
+
+- Various small bug-fixes

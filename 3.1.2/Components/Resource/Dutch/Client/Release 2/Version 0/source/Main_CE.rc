@@ -1,0 +1,408 @@
+//Microsoft eMbedded Visual C++ generated resource script.
+//
+#include "resource_CE.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource_CE.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG_DLG DIALOG DISCARDABLE  0, 0, 160, 167
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SecureW2 PPC Configuratie"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Versie 3.1.1",IDC_STATIC,115,26,40,8
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,160,26
+    CONTROL         "Tab1",IDC_CONFIG_TAB,"SysTabControl32",0x0,4,34,151,115
+    DEFPUSHBUTTON   "OK",IDOK,54,150,50,14
+    PUSHBUTTON      "Annuleer",IDCANCEL,105,150,50,14
+END
+
+IDD_SERVER_TRUST_DLG DIALOG DISCARDABLE  0, 0, 160, 167
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION
+CAPTION "SecureW2 PPC Onbekende Server"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,160,31
+    CONTROL         "Tree1",IDC_CERT_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_BORDER | WS_TABSTOP,3,44,149,66
+    DEFPUSHBUTTON   "Installeer Alle Certificaten",IDINSTALLCERTS,3,113,95,
+                    14
+    DEFPUSHBUTTON   "Installeer Certificaat",IDINSTALLCERT,4,130,94,14
+    DEFPUSHBUTTON   "OK",IDOK2,55,150,50,14,WS_DISABLED
+    PUSHBUTTON      "Annuleer",IDCANCEL,107,150,50,14
+    GROUPBOX        "Certificaat hierarchie",IDC_STATIC,0,33,157,113
+END
+
+IDD_CRED_DLG DIALOG DISCARDABLE  0, 0, 160, 127
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION
+CAPTION "SecureW2 PPC Gebruikers gegevens"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Gebruikersnaam:",IDC_STATIC,5,41,55,8
+    LTEXT           "Wachtwoord:",IDC_STATIC,6,59,44,8
+    LTEXT           "Domain:",IDC_CRED_DOMAIN_LABEL,6,75,27,8
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,160,31
+    EDITTEXT        IDC_CRED_USERNAME,62,38,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRED_PASSWORD,62,56,92,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRED_DOMAIN,62,73,92,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,46,107,50,14
+    PUSHBUTTON      "Annuleer",IDCANCEL,98,107,50,14
+    CONTROL         "Gebruikers gegevens opslaan",IDC_CRED_SAVECREDENTIALS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,48,90,109,10
+END
+
+IDD_CONFIG_USER_DLG DIALOG DISCARDABLE  5, 55, 149, 91
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Gebruikersnaam:",IDC_CONFIG_USER_USERNAME_LABEL,3,26,55,
+                    8,WS_DISABLED
+    LTEXT           "Wachtwoord:",IDC_CONFIG_USER_PASSWORD_LABEL,3,43,44,8,
+                    WS_DISABLED
+    LTEXT           "Domain:",IDC_CONFIG_USER_DOMAIN_LABEL,3,59,27,8,
+                    WS_DISABLED
+    CONTROL         "Vraag gebruiker om gegevens",IDC_CONFIG_PROMPT_USER,
+                    "Button",BS_AUTOCHECKBOX | BS_RIGHTBUTTON | WS_TABSTOP,
+                    34,7,111,10
+    EDITTEXT        IDC_CONFIG_USER_USERNAME,59,23,87,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_CONFIG_USER_PASSWORD,59,40,87,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CONFIG_USER_DOMAIN,60,57,86,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_CONFIG_CERT_DLG DIALOG DISCARDABLE  5, 47, 149, 100
+STYLE DS_SETFOREGROUND | WS_CHILD | WS_VISIBLE
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Verifieer server certificaat                                             ",
+                    IDC_CONFIG_VERIFY_SERVER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,4,99,10
+    CONTROL         "Verifieer server naam:",IDC_CONFIG_VERIFY_SERVER_NAME,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,10,
+                    63,92,10
+    EDITTEXT        IDC_CONFIG_SERVER_NAME,10,77,129,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Vertrouwde Root CA:",IDC_STATIC,9,15,70,8
+    LISTBOX         IDC_CONFIG_TRUSTEDROOTCA,8,24,133,19,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Voeg CA toe",IDC_CONFIG_CERT_ADD,27,46,54,14
+    PUSHBUTTON      "Verwijder CA",IDC_CONFIG_CERT_REMOVE,82,46,58,14
+    GROUPBOX        "",IDC_STATIC,3,3,141,91
+END
+
+IDD_CONFIG_AUTH_DLG DIALOG DISCARDABLE  5, 47, 149, 91
+STYLE DS_SETFOREGROUND | WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Selecteer Authenticatie Methode:",
+                    IDC_CONFIG_INNER_AUTH_LABEL,7,10,108,8
+    COMBOBOX        IDC_CONFIG_INNER_AUTH,5,20,139,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "EAP type:",IDC_CONFIG_INNER_EAP_LABEL,6,35,43,8,
+                    WS_DISABLED
+    COMBOBOX        IDC_CONFIG_INNER_EAP,5,44,139,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Configureer",IDC_CONFIG_INNER_EAP_CONFIG,95,62,50,14,
+                    WS_DISABLED
+END
+
+IDD_PROFILE_DLG DIALOG DISCARDABLE  0, 0, 160, 167
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SecureW2 PPC Profiel"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,160,31
+    CONTROL         "Tab1",IDC_PROFILE_TAB,"SysTabControl32",0x0,4,34,151,
+                    115
+    DEFPUSHBUTTON   "OK",IDOK,56,150,50,14
+    PUSHBUTTON      "Annuleer",IDCANCEL,107,150,48,14
+    DEFPUSHBUTTON   "Geavanceerd",IDC_CONFIG_USER_ADVANCED,4,150,50,14
+END
+
+IDD_CONFIG_PROFILE_DLG DIALOG DISCARDABLE  5, 47, 149, 91
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Profiel:",IDC_CONFIG_PROFILES_LABEL,7,10,24,8
+    COMBOBOX        IDC_CONFIG_PROFILES,5,20,139,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Configureer",IDC_CONFIG_PROFILE_CONFIGURE,93,56,50,14,
+                    WS_DISABLED
+    PUSHBUTTON      "Nieuw",IDC_CONFIG_PROFILE_NEW,93,38,50,14
+    PUSHBUTTON      "Wissen",IDC_CONFIG_PROFILE_DELETE,93,74,50,14,
+                    WS_DISABLED
+END
+
+IDD_PROFILE_NEW_DLG DIALOG DISCARDABLE  0, 0, 160, 111
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION
+CAPTION "SecureW2 PPC Nieuw Profiel"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Profiel ID:",IDC_PROFILE_LABEL,7,55,33,8
+    CONTROL         102,-1,"Static",SS_BITMAP,0,0,160,31
+    EDITTEXT        IDC_PROFILE_ID,50,52,100,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,46,91,50,14
+    PUSHBUTTON      "Annuleer",IDCANCEL,98,91,50,14
+END
+
+IDD_CONFIG_ADVANCED_DLG DIALOG DISCARDABLE  0, 0, 160, 130
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SecureW2 PPC Geavanceerd"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,111,50,14
+    PUSHBUTTON      "Annuleer",IDCANCEL,105,111,50,14
+    CONTROL         "Server certificaat moet geïnstalleerd zijn op lokale computer",
+                    IDC_CONFIG_SERVER_CERT_LOCAL,"Button",BS_AUTOCHECKBOX | 
+                    BS_RIGHTBUTTON | BS_MULTILINE | WS_TABSTOP,8,29,145,22
+    CONTROL         "Gebruikers mogen nieuwe verbindingen opzetten",
+                    IDC_CONFIG_ALLOW_NEW_CONNECTION,"Button",BS_AUTOCHECKBOX | 
+                    BS_RIGHTBUTTON | BS_MULTILINE | WS_TABSTOP,8,67,145,16
+    CONTROL         "Verifieer Microsoft Key extension",
+                    IDC_CONFIG_VERIFY_MS_EXTENSION,"Button",BS_AUTOCHECKBOX | 
+                    BS_RIGHTBUTTON | BS_MULTILINE | WS_TABSTOP,7,51,146,10
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,20,20
+END
+
+IDD_CONFIG_CON_DLG DIALOG DISCARDABLE  5, 47, 149, 100
+STYLE DS_SETFOREGROUND | WS_CHILD | WS_VISIBLE
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Sessie hervatting mogelijk maken (snel verbinden)",
+                    IDC_CONFIG_ENABLE_SESSION_RESUMPTION,"Button",
+                    BS_AUTOCHECKBOX | BS_RIGHTBUTTON | BS_MULTILINE | 
+                    WS_TABSTOP,6,73,137,15
+    CONTROL         "Gebruik anoniem outer identiteit",
+                    IDC_CONFIG_USE_ALTERNATE_ANONYMOUS,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,7,20,118,10
+    CONTROL         "Specificeer outer identiteit:",
+                    IDC_CONFIG_USE_ALTERNATE_SPECIFY,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,7,32,103,10
+    EDITTEXT        IDC_CONFIG_ALTERNATE_OUTER,7,47,133,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Gebruik alternatieve outer identiteit:",
+                    IDC_CONFIG_USE_ALTERNATE_OUTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,6,129,10
+    GROUPBOX        "",IDC_STATIC,3,6,141,64
+END
+
+IDD_CONFIG_LICENSE_DLG DIALOG DISCARDABLE  5, 47, 149, 91
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Licentie:",IDC_CONFIG_REG_ID_LABEL,8,15,29,8
+    LTEXT           "Licentie sleutel",IDC_CONFIG_REG_ID,41,15,105,8
+    PUSHBUTTON      "Importeer Licentie sleutel",IDC_IMPORT_LICENSE,6,30,89,
+                    14
+END
+
+IDD_CONFIG_CA_DLG DIALOG DISCARDABLE  0, 0, 160, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Toevoegen Trusted Root CA"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Toevoegen",IDC_CONFIG_ADDCERT_ADD,32,136,50,14
+    PUSHBUTTON      "Annuleer",IDCANCEL,83,136,50,14
+    LISTBOX         IDC_CONFIG_ROOTCA,3,40,130,94,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Beschikbare Root CA:",IDC_STATIC,6,28,70,8
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,0,0,160,26
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CRED_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_CONFIG_CERT_DLG, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+    END
+
+    IDD_CONFIG_ADVANCED_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_CONFIG_CON_DLG, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+    END
+
+    IDD_CONFIG_CA_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CERT_ICON           ICON    DISCARDABLE     "ICON1_CE.ICO"
+IDI_CERT_ICON_ERROR     ICON    DISCARDABLE     "ICON2_CE.ICO"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Alfa & Ariss B.V.\0"
+            VALUE "FileDescription", "SecureW2 PPC Dutch Resource v1.0.0\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "SecureW2 PPC Dutch Resource v1.0.0\0"
+            VALUE "LegalCopyright", "Copyright © 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "aa_sw2_res.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SecureW2 PPC Dutch Resource v1.0.0\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "logo_CE.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_LICENSE     "Onjuist of verlopen licentie"
+    IDS_SW2_ERROR           "SecureW2 Fout"
+    IDS_CERTIFICATES_SUCCESS "Certificaten succesvol geïnstalleerd"
+    IDS_CERTIFICATES_FAILED "Certificaten konden niet geïnstalleerd worden "
+    IDS_PROFILE_EXISTS      "Profiel bestaat reeds"
+    IDS_SW2_ALERT           "SecureW2 Alert"
+    IDS_PROFILE_DELETE      "Weet u zeker dat u dit profiel wilt wissen?"
+    IDS_PROFILE_DELETEDEFAULT "Kan profiel DEFAULT niet wissen"
+    IDS_SW2_CERTIFICATE     "SecureW2 Certificaat"
+    IDS_CERTIFICATE_SUCCESS "Certificaat succesvol geïnstalleerd"
+    IDS_CERTIFICATE_FAILED  "Certificaat kon niet geïnstalleerd worden"
+    IDS_TAB_CONNECTION      "Verbinding"
+    IDS_TAB_CERTIFICATES    "Certificaten"
+    IDS_TAB_AUTHENTICATION  "Authenticatie"
+    IDS_TAB_USERACCOUNT     "Gebruikers Account"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_PROFILE         "Profiel"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
